@@ -1,0 +1,14 @@
+# Malaria Detection Using Deep Learning
+
+## Dataset
+This project uses the **Cell Images for Detecting Malaria** dataset.
+
+🔗 Dataset Source (Kaggle):  
+https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria
+
+### Dataset Description
+- Microscopic blood smear images
+- Two classes:
+  - Parasitized (infected)
+  - Uninfected (healthy)
+- Provided by National Institutes of Health (NIH)

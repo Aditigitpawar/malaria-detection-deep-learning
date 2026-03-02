@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malaria Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧬 Malaria Detection System</h1>
+        <p class="subtitle">AI Powered Blood Cell Classification</p>
+
+        <div class="card">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" class="file-input" required>
+    <button type="submit" class="btn">Predict</button>
+</form>
+
+{% if prediction %}
+    <div class="result {{ prediction_class }}">
+        <h2>Result: {{ prediction }}</h2>
+        <p>Confidence: {{ confidence }}%</p>
+        <img src="{{ image_path }}" width="200">
+    </div>
+{% endif %}
+        </div>
+
+        <div class="info">
+            <h3>About Project</h3>
+            <p>
+                This system uses Deep Learning to classify microscopic blood cell images
+                into Parasitized or Uninfected categories.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

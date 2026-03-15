@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
-DATASET_PATH = r"C:\\Users\\Aditi\Downloads\\archive\\cell_images\\cell_images"
+DATASET_PATH = r"path"
 datagen = ImageDataGenerator(
     rescale=1./255,
     rotation_range=20,
